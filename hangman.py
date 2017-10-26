@@ -67,7 +67,7 @@ def hangman(secret_word):
             print('Sorry, no %s in word' % guess)
         else:
             print('Good guess!')
-        guessed_word = get_guessed_word(secret_word, letters_guessed)
+            guessed_word = get_guessed_word(secret_word, letters_guessed)
 
         if is_word_guessed(secret_word, letters_guessed):
             print('You win!')
