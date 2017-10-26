@@ -32,16 +32,15 @@ def hangman(secret_word):
     guessed_word = get_guessed_word(secret_word, letters_guessed)
     guesses = 6
 
-    print(f'Secret word has {letter_count} letters')
-    print(guessed_word)
+    print('Secret word has %s letters' & letter_count)
     print('*' * 10)
 
     playing = True
 
     while playing:
         available_letters = get_available_letters(letters_guessed)
-        print(f'You have {guesses} guesses left')
-        print(f'Available letters: {available_letters}')
+        print('You have %s guesses left' % guesses)
+        print('Available letters: %s' % available_letters)
         print(gallow_pic[6 - guesses])
         print(guessed_word)
 
@@ -65,9 +64,9 @@ def hangman(secret_word):
 
         if guess not in secret_word:
             guesses -= 1
-            print(f'Sorry, no {guess} in word')
+            print('Sorry, no %s in word' % guess)
         else:
-            print(f'Good guess!')
+            print('Good guess!')
         guessed_word = get_guessed_word(secret_word, letters_guessed)
 
         if is_word_guessed(secret_word, letters_guessed):
