@@ -8,9 +8,9 @@ The base CLI game was from [MIT 6.0001](https://ocw.mit.edu/courses/electrical-e
 
 ## Environment
 
-- I am doing the tutorial in Python 3.6, 99% of the code will work in python 2.7+
+- I am doing the tutorial in Python 3.6, but you should be fine with 2.7+
 - Highly recommend virtual environments and git
-- I use PyCharm for the video tutorial. Use whatever you're comfortable with.
+- I use vim for the video tutorial. Use whatever you're comfortable with.
 
 ## What you should know
 
