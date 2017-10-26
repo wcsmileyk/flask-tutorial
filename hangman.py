@@ -32,14 +32,14 @@ def hangman(secret_word):
     guessed_word = get_guessed_word(secret_word, letters_guessed)
     guesses = 6
 
-    print('Secret word has %s letters' & letter_count)
+    print('Secret word has %d letters' % letter_count)
     print('*' * 10)
 
     playing = True
 
     while playing:
         available_letters = get_available_letters(letters_guessed)
-        print('You have %s guesses left' % guesses)
+        print('You have %d guesses left' % guesses)
         print('Available letters: %s' % available_letters)
         print(gallow_pic[6 - guesses])
         print(guessed_word)
